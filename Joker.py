@@ -36,6 +36,8 @@ def fakeemwpass():
              f.write(ses + "@" + sas + ".com : "+ sus)
              f.write("\n")
              f.close()
+             
+             print("Done!")
         else:
              for i in range(amount2):
                 f = open("emails.txt", "a")
@@ -44,6 +46,7 @@ def fakeemwpass():
                 f.write(ses + "@" + sas + ".com : " + passquery)
                 f.write("\n")
                 f.close()
+             print("Done!")
     else:
       os.system("cls")
       amount = input("Amount: ")
@@ -57,6 +60,7 @@ def fakeemwpass():
             f.write(ses + "@" + endingrandomquery + " : " + sus)
             f.write("\n")
             f.close()
+        print("Done!")
       else:
         for i in range(amount2):
             f = open("emails.txt", "a")
@@ -65,6 +69,7 @@ def fakeemwpass():
             f.write(ses + "@" + endingrandomquery + " : " + passquery)
             f.write("\n")
             f.close()
+        print("Done!")
 
         
 def fakeemnopass():
@@ -81,7 +86,8 @@ def fakeemnopass():
             sas = id_generator(7, letters)
             f.write(ses + "@" + sas + ".com")
             f.write("\n")
-        f.close()
+            f.close()
+        print("Done!")
     else:
         os.system("cls")
         amount = input("Amount: ")
@@ -93,6 +99,7 @@ def fakeemnopass():
             f.write(ses + "@" + endingrandomquery)
             f.write("\n")
             f.close()
+        print("Done!")
 
 def discordtoken(notagrabber):
     os.system("cls")
@@ -110,6 +117,7 @@ def discordtoken(notagrabber):
         f.write(base64_message + "." + sis + "." + sos)
         f.write("\n")
         f.close()
+    print("Done!")
 
 
 
